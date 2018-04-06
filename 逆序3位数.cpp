@@ -1,10 +1,14 @@
 #include <stdio.h>
 int main(){
-	int n,a,b,c;
+	int n,a,b,c,s;
 	scanf("%d",&n);
+	if(n>99&&n<=999){
 	a=n%10;
 	n/=10;
 	b=n%10;
 	c=n/10;
-	printf("%d%d%d",a,b,c);
+	s=a*100+b*10+c;
+	printf("%d",s);
+	}
+	return 0;
 } 
